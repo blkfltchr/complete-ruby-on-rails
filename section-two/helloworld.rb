@@ -1,16 +1,10 @@
 # Three ways to ouput Hello world
 
-print "Hello world 1\n" 
+print "Hello world 1\n"  # outputs Hello world (needs new line)
 
-# outputs Hello world (needs new line)
+puts "Hello world 2" # outputs Hello world
 
-puts "Hello world 2"
-
-# outputs Hello world
-
-p "Hello world 3"
-
-# outputs "Hello world" (with quotation marks)
+p "Hello world 3" # outputs "Hello world" (with quotation marks)
 
 # With a variable
 
