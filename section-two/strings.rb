@@ -52,5 +52,3 @@ p '\'Hello world\', the computer said.'
 puts "What is your first name?"
 f_name = gets.chomp
 puts "Hello, #{f_name}" # outputs Hello, Blake
-
-
