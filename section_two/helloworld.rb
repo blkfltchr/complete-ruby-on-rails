@@ -15,7 +15,7 @@ puts greeting
 # With a method
 
 def say_hello(greeting)
-    puts greeting
+  puts greeting
 end
 
 say_hello "Hello world 5" # call it like so

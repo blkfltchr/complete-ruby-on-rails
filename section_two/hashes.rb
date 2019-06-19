@@ -26,7 +26,7 @@ p symbol_hash # ouputs {:a=>1, :b=>2}
 puts "-" * 20 
 
 symbol_hash.each do |key, value|
-    puts "The class for key is #{key.class}; the class for value is #{value.class}."
+  puts "The class for key is #{key.class}; the class for value is #{value.class}."
 end
 
 # ouputs
@@ -34,7 +34,7 @@ end
 # The class for key is Symbol; the class for value is Integer.
 
 my_name.each do |key, value|
-    puts "The class for key is #{key.class}; the class for value is #{value.class}."
+  puts "The class for key is #{key.class}; the class for value is #{value.class}."
 end
 
 # ouputs:

@@ -1,21 +1,21 @@
 # User data 
 
 users = [
-    { username: "username", password: "password" },
-    { username: "hello", password: "world" },
-    { username: "me", password: "1a2b3c" },
-    { username: "blake", password: "fletcher" }
+  { username: "username", password: "password" },
+  { username: "hello", password: "world" },
+  { username: "me", password: "1a2b3c" },
+  { username: "blake", password: "fletcher" }
 ]
 
 # Authenticate user method
 
 def auth_user(username, password, list_of_users)
+  if current_user[:username] == username && current_user[:password] == password
     list_of_users.each do |current_user|
-        if current_user[:username] == username && current_user[:password] == password
-            return "Welcome, #{current_user[:username]}!"
-        end
+      return "Welcome, #{current_user[:username]}!"
     end
-    return "Invalid credentials"
+  end
+  return "Invalid credentials"
 end
 
 # User greeting
@@ -36,33 +36,33 @@ attempts = 1
 
 while attempts < 4
 
-    # Get username and password
-    print "Username: "
-    username = gets.chomp
+  # Get username and password
+  print "Username: "
+  username = gets.chomp
 
-    print "Password: "
-    password = gets.chomp
+  print "Password: "
+  password = gets.chomp
 
-    # Compare user's input to users array (naive implementation)
-    # users.each do |user|
-    #     if user[:username] && user[:password] == password
-    #         puts "Welcome, #{user[:username]}!"
-    #         break
-    #     else 
-    #         puts "Invalid credentials"
-    #     end
-    # end
+  # Compare user's input to users array (naive implementation)
+  # users.each do |user|
+  #     if user[:username] && user[:password] == password
+  #         puts "Welcome, #{user[:username]}!"
+  #         break
+  #     else 
+  #         puts "Invalid credentials"
+  #     end
+  # end
 
-    # Compare user's input to users array (method implementation)
-    authentication = auth_user(username, password, users)
-    puts authentication
+  # Compare user's input to users array (method implementation)
+  authentication = auth_user(username, password, users)
+  puts authentication
 
-    # If user presses q, quit program
-    puts "Press any key to try again or q to quit"
-    input = gets.chomp.downcase
-    break if input == "q"
+  # If user presses q, quit program
+  puts "Press any key to try again or q to quit"
+  input = gets.chomp.downcase
+  break if input == "q"
 
-    attempts += 1
+  attempts += 1
 end
 
 # When user exceeds 4 attempts
