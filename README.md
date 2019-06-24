@@ -4,3 +4,4 @@ Course notes, applications and exercies from [Complete Ruby on Rails Developer C
 
 Contents:
 - [x] `/section-two` - Fundamentals of the Ruby programming language: hello world, types, arrays, etc.
+- [x] `/section-three` - Fundamentals of the Ruby on Rails framework
